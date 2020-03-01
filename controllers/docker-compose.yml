@@ -1,0 +1,27 @@
+version: '2'
+
+services:
+  deploy:
+    build:
+      context: ./deployment
+    volumes:
+      - ./deployment/vsperf:/vsperf
+    ports:
+      - 50051:50051
+  testcontrol:
+    build:
+      context: ./testcontrol
+    volumes:
+      - ./testcontrol/vsperf:/vsperf
+    ports:
+      - 50052:50052
+  
+
+    
+
+
+    
+    
+
+
+

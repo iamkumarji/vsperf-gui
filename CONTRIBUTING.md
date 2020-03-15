@@ -1,0 +1,3 @@
+# General Coding Style
+
+## Code
